@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/lesson5">
+        <file>assets/Flower.png</file>
+        <file>assets/Sparkling.jpg</file>
+        <file>assets/Gradient.png</file>
+        <file>assets/mask.png</file>
+        <file>assets/mask_f.png</file>
+        <file>assets/baikal.jpg</file>
+        <file>assets/mask_black2.png</file>
+    </qresource>
+</RCC>
