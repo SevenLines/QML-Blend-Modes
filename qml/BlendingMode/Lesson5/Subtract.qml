@@ -3,7 +3,7 @@ import QtQuick 2.0
 ImagesShaderComposition {
 //    image2.source: "qrc:/lesson5/assets/Gradient.png"
     color: "#DDD"
-    title: "Divide"
+    title: "Subtract"
     
     shaderMainFunc: "
 float x;
@@ -22,7 +22,7 @@ if (x > 0.0 && x <= 1.0)  {
     inActiveImgFrag = texture2D(image2, vec2(x, qt_TexCoord0.y));
 }
 if (above1 && above2) {
-    gl_FragColor = inActiveImgFrag / activeImgFrag;
+    gl_FragColor = inActiveImgFrag - activeImgFrag;
     gl_FragColor.a = 1.0;
     return;
 }

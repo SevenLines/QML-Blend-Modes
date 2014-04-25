@@ -17,7 +17,8 @@ include(qtquick2applicationviewer/qtquick2applicationviewer.pri)
 qtcAddDeployment()
 
 OTHER_FILES += \
-    qml/BlendingMode/Lesson5.qml
+    qml/BlendingMode/Lesson5.qml \
+    qml/BlendingMode/Lesson5/ValueBlend.qml
 
 RESOURCES += \
     images.qrc

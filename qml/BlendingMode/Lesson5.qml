@@ -6,78 +6,43 @@ import "Lesson5"
 OpacityTransitionPresentation {
     
     textColor: "white";
-
-    Lighten {
-        
-    }
     
-    Darken {
-        
-    }
-    
-    Difference {
-        
-    }
-    
-    Addition {
-        
-    }
-    
-    LinearLight {
-        
-    }
-    
-    LinearBurn {
-        
-    }
-    
-    ColorBurn {
-        
-    }
-    
-    Divide {
-        
-    }
-    
-    LinearDodge {
-        
-    }
-    
-    ColorDodge {
-        
-    }
-
     SlideTitle {
         centeredText: "Смешивание изображений"
     }
     
-    AlphaBlending {
-        
+    AlphaBlending { }   
+    MaskBlending { }
+    
+    Addition { }   
+    Subtract { }
+    Difference { }
+    MultiplyBlend { }
+    Divide { }
+
+    Lighten { }
+    Darken { }
+    
+    HueBlend { }
+    Saturation { }
+    ColorBlend { }
+    ValueBlend { }
+    
+    LinearLight { }
+    LinearBurn { }
+    ColorBurn { }
+    
+    LinearDodge { } 
+    ColorDodge { }
+    ScreenBlend { }
+
+    OverlayBlend { }
+    HardLight { }
+    SoftLightBlend { }
+
+    SlideTitle {
+        centeredText: "Обход изображений"
     }
     
-    MaskBlending {
-        
-    }
-
-
-    MultiplyBlend {
-
-    }
-
-    ScreenBlend {
-
-    }
-
-    OverlayBlend {
-
-    }
-
-    HardLight {
-
-    }
-    
-    SoftLightBlend {
-        
-    }
-
+    Thresholding {    }
 }

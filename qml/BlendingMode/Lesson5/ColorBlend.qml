@@ -3,7 +3,7 @@ import QtQuick 2.0
 ImagesShaderComposition {
 //    image2.source: "qrc:/lesson5/assets/Gradient.png"
     color: "#DDD"
-    title: "Divide"
+    title: "Color"
     
     shaderMainFunc: "
 float x;
@@ -22,8 +22,11 @@ if (x > 0.0 && x <= 1.0)  {
     inActiveImgFrag = texture2D(image2, vec2(x, qt_TexCoord0.y));
 }
 if (above1 && above2) {
-    gl_FragColor = inActiveImgFrag / activeImgFrag;
-    gl_FragColor.a = 1.0;
+    vec3 inActiveImgHsv = rgb2hsv(inActiveImgFrag.rgb);
+    vec3 activeImgHsv = rgb2hsv(activeImgFrag.rgb);
+    inActiveImgHsv.r = activeImgHsv.r; // set hue
+    inActiveImgHsv.g = activeImgHsv.g; // set saturation
+    gl_FragColor = vec4(hsv2rgb(inActiveImgHsv),1.0);
     return;
 }
 if (above1) {

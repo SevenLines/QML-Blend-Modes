@@ -7,5 +7,7 @@
         <file>assets/mask_f.png</file>
         <file>assets/baikal.jpg</file>
         <file>assets/mask_black2.png</file>
+        <file>assets/rainbow.png</file>
+        <file>assets/thresholding.jpg</file>
     </qresource>
 </RCC>
